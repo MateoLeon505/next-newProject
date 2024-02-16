@@ -11,7 +11,6 @@ const getData = async () => {
 const Home = async () => {
 
   const users = await getData()
-  console.log(users);
 
   return (
     <div >
