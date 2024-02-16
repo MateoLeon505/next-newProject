@@ -9,9 +9,11 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <html lang="en">
-      <body className='container mx-auto h-screen flex justify-center items-center'>
+      <body>
         <NavBar/>
-        {children}
+        <main className='container mx-auto h-[calc(100vh-4rem)] flex justify-center items-center'>
+          {children}
+        </main>
       </body>
     </html>
   );
